@@ -18,6 +18,7 @@
 		04961BF32BDDDE1300518AF2 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04961BF22BDDDE1300518AF2 /* RequestMethod.swift */; };
 		04961BF62BDDDFB300518AF2 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04961BF52BDDDFB300518AF2 /* ApiError.swift */; };
 		04961BF82BDDE2C000518AF2 /* Encodable+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04961BF72BDDE2C000518AF2 /* Encodable+Extenstion.swift */; };
+		04961BFA2BDDE46300518AF2 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04961BF92BDDE46300518AF2 /* ApiClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		04961BF22BDDDE1300518AF2 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
 		04961BF52BDDDFB300518AF2 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		04961BF72BDDE2C000518AF2 /* Encodable+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extenstion.swift"; sourceTree = "<group>"; };
+		04961BF92BDDE46300518AF2 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				04961BF72BDDE2C000518AF2 /* Encodable+Extenstion.swift */,
 				04961BF52BDDDFB300518AF2 /* ApiError.swift */,
 				04961BF22BDDDE1300518AF2 /* RequestMethod.swift */,
+				04961BF92BDDE46300518AF2 /* ApiClient.swift */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04961BFA2BDDE46300518AF2 /* ApiClient.swift in Sources */,
 				04961BF32BDDDE1300518AF2 /* RequestMethod.swift in Sources */,
 				04961BF12BDDDB3B00518AF2 /* ApiProvider.swift in Sources */,
 				04961BF82BDDE2C000518AF2 /* Encodable+Extenstion.swift in Sources */,

@@ -16,6 +16,8 @@
 		04961BE12BDDDACF00518AF2 /* ConcurrencyNetworkLayerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04961BE02BDDDACF00518AF2 /* ConcurrencyNetworkLayerUITestsLaunchTests.swift */; };
 		04961BF12BDDDB3B00518AF2 /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04961BF02BDDDB3B00518AF2 /* ApiProvider.swift */; };
 		04961BF32BDDDE1300518AF2 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04961BF22BDDDE1300518AF2 /* RequestMethod.swift */; };
+		04961BF62BDDDFB300518AF2 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04961BF52BDDDFB300518AF2 /* ApiError.swift */; };
+		04961BF82BDDE2C000518AF2 /* Encodable+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04961BF72BDDE2C000518AF2 /* Encodable+Extenstion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		04961BE02BDDDACF00518AF2 /* ConcurrencyNetworkLayerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyNetworkLayerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		04961BF02BDDDB3B00518AF2 /* ApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
 		04961BF22BDDDE1300518AF2 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		04961BF52BDDDFB300518AF2 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		04961BF72BDDE2C000518AF2 /* Encodable+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extenstion.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +106,7 @@
 				04961BEF2BDDDAFE00518AF2 /* Module */,
 				04961BED2BDDDAD600518AF2 /* Resources */,
 				04961BC92BDDDACF00518AF2 /* Preview Content */,
-				04961BF02BDDDB3B00518AF2 /* ApiProvider.swift */,
-				04961BF22BDDDE1300518AF2 /* RequestMethod.swift */,
+				04961BF42BDDDF5700518AF2 /* NetworkLayer */,
 			);
 			path = ConcurrencyNetworkLayer;
 			sourceTree = "<group>";
@@ -155,6 +158,17 @@
 				04961BC52BDDDACD00518AF2 /* ContentView.swift */,
 			);
 			path = Module;
+			sourceTree = "<group>";
+		};
+		04961BF42BDDDF5700518AF2 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				04961BF02BDDDB3B00518AF2 /* ApiProvider.swift */,
+				04961BF72BDDE2C000518AF2 /* Encodable+Extenstion.swift */,
+				04961BF52BDDDFB300518AF2 /* ApiError.swift */,
+				04961BF22BDDDE1300518AF2 /* RequestMethod.swift */,
+			);
+			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +303,9 @@
 			files = (
 				04961BF32BDDDE1300518AF2 /* RequestMethod.swift in Sources */,
 				04961BF12BDDDB3B00518AF2 /* ApiProvider.swift in Sources */,
+				04961BF82BDDE2C000518AF2 /* Encodable+Extenstion.swift in Sources */,
 				04961BC62BDDDACD00518AF2 /* ContentView.swift in Sources */,
+				04961BF62BDDDFB300518AF2 /* ApiError.swift in Sources */,
 				04961BC42BDDDACD00518AF2 /* ConcurrencyNetworkLayerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

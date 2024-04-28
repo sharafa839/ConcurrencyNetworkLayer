@@ -9,7 +9,7 @@ import Foundation
 
 protocol ApiClientProtocol {
     
-    func request<T:Decodable>(apiProvider: ApiProvider, response: T) async throws ->  T
+    func request<T:Decodable>(apiProvider: ApiProvider, response: T.Type) async throws ->  T
 }
 
 final class ApiClient: ApiClientProtocol {
@@ -23,7 +23,7 @@ final class ApiClient: ApiClientProtocol {
         return urlSession
     }
     
-    func request<T>(apiProvider: ApiProvider, response: T) async throws -> T where T : Decodable {
+    func request<T>(apiProvider: ApiProvider, response: T.Type) async throws -> T where T : Decodable {
         do {
             let (data, response) = try await session.data(for: apiProvider.asURLRequest())
             return try manageResponse(data: data, response: response)

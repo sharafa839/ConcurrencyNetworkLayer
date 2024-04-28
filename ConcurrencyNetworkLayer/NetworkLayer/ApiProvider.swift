@@ -8,6 +8,7 @@
 import Foundation
 
 protocol ApiProvider {
+    
     var scheme: String { get }
     var method: RequestMethod { get }
     var baseURL: String { get }
@@ -20,7 +21,7 @@ protocol ApiProvider {
 
 extension ApiProvider {
     
-    func asURLRequest() -> URLRequest {
+    func asURLRequest() throws -> URLRequest {
         var urlComponents =  URLComponents()
         urlComponents.path = path
         urlComponents.scheme = scheme
@@ -28,7 +29,9 @@ extension ApiProvider {
         if let queryItems = queryItems {
             urlComponents.queryItems = queryItems
         }
-        guard let url = urlComponents.url else { return }
+        guard let url = urlComponents.url else {
+            throw ApiError.init(errorCode: "Error", message: "urlError")
+        }
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = method.rawValue
         urlRequest.allHTTPHeaderFields = header
@@ -37,7 +40,7 @@ extension ApiProvider {
             do {
                 urlRequest.httpBody = try JSONSerialization.data(withJSONObject: body, options: [])
             } catch {
-                
+                throw ApiError.init(errorCode: "Error", message: "errorEncodingBody")
             }
         }
         return urlRequest
